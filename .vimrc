@@ -53,12 +53,14 @@ hi SignColumn 			guibg=NONE ctermbg=NONE
 hi EndOfBuffer 			guibg=NONE ctermbg=NONE
 hi StatusLine ctermbg=NONE 	guibg=NONE
 set statusline=
-set statusline+=\ %f           " File name
-set statusline+=\ %m           " Modified flag
-set statusline+=\ %=           " Separator
-set statusline+=\ %l:%c        " Line:Column
-set statusline+=\ %P           " Percentage through file
-set laststatus=2               " Ensure statusline is visible
+set statusline+=\ %f           	" File name
+set statusline+=\ %m           	" Modified flag
+set statusline+=\ %=           	" Separator
+set statusline+=\ %l:%c        	" Line:Column
+set statusline+=\ %P           	" Percentage through file
+set laststatus=2               	" Ensure statusline is visible
+let &t_SI = "\e[5 q"    	" changes curor to thin line on insert
+let &t_EI = "\e[2 q"    	" changes cursor to block on insert end
 
 " coc default
 " https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.vim
