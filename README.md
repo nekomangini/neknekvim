@@ -1,5 +1,3 @@
-# neknekvim
-
 # Screenshots
 
 ![screenshot 01][sreenshots/screenshot_2024-12-20_16-48-03.png]
