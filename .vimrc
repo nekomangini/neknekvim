@@ -6,6 +6,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " themes
 Plug 'joshdick/onedark.vim'
+Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+Plug 'Rigellute/shades-of-purple.vim'
 
 call plug#end()
 
@@ -32,6 +34,11 @@ nnoremap <C-l> <C-w>l
 nnoremap \| :vsplit<CR>
 nnoremap \  :split<CR>
 
+" Buffers
+set hidden
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [b :bprev<CR>
+
 " Code navigation
 " nmap n :m +1<CR>
 " nmap m :m -2<CR>
@@ -45,7 +52,10 @@ vnoremap j :m +1<CR>
 vnoremap k :m -2<CR>
 
 " themes
-colorscheme onedark
+" colorscheme onedark
+" colorscheme embark
+colorscheme shades_of_purple
+syntax enable
 hi Normal 			guibg=NONE ctermbg=NONE
 hi NonText 			guibg=NONE ctermbg=NONE
 hi LineNr 			guibg=NONE ctermbg=NONE
