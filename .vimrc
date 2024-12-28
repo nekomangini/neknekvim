@@ -11,9 +11,13 @@ Plug 'Rigellute/shades-of-purple.vim'
 
 call plug#end()
 
-" Enable line numbers
+" 
 set number
 set relativenumber
+set fillchars=eob:\  " Replace ~ with a space
+filetype on
+filetype plugin on
+filetype indent on
 
 " Key mappings
 inoremap jk <Esc>
@@ -71,6 +75,9 @@ set statusline+=\ %P           	" Percentage through file
 set laststatus=2               	" Ensure statusline is visible
 let &t_SI = "\e[5 q"    	" changes curor to thin line on insert
 let &t_EI = "\e[2 q"    	" changes cursor to block on insert end
+
+" ocaml
+set rtp^="/home/nekomangini/.opam/default/share/ocp-indent/vim"
 
 " coc default
 " https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.vim
